@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>How long until Laracon starts?</title>
+    <meta name="description" content="Figure out how long it'll take for Laracon to start.">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How long until Laracon starts?" />
+    <meta property="og:description" content="Figure out how long it'll take for Laracon to start." />
+    <meta property="og:url" content="https://how-long-until-laracon-starts.net/" />
+    <meta property="og:site_name" content="Figure out how long it'll take for Laracon to start." />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How long until Laracon starts?" />
+    <meta name="twitter:description" content="Figure out how long it'll take for Laracon to start." />
+    <meta property="og:image" content="/social-share-new.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:image" content="/social-share-new.png" />
+    <meta name="twitter:image:alt" content="How long until Laracon starts?" />
+    <meta property="og:image:alt" content="Figure out how long it'll take for Laracon to start." />
+    <link href="/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel='stylesheet' href='/normalize.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.6.0/alpine.js"></script>
+</head>
+
+<body>
+<section id="waves" class="schedule">
+    <img class="element element-1" src="/jellies.png">
+    <img class="element element-2" src="/bubbles.png">
+    <div class="schedule-top">
+        <div class="schedule-top-left">
+            <h2 id="schedule" class="purple">
+                How long until Laracon starts?<br />
+                <div style="font-weight:400;font-size: 18px;">A time-relative <a href="https://laracon.net">Laracon Online</a> schedule.</div>
+            </h2>
+        </div>
+    </div>
+    <style>
+        .schedule-day li{
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .event span{
+            display: block !important;
+            font-style: italic;
+            font-size: 11px;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+    </style>
+    <div class="schedule-day" style="padding-top:24px;">
+        <ul>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T09:50:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">Welcome</span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T10:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Freek Van der Herten
+            <span>A practical look at multitenancy in Laravel</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T10:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Jenny Shen
+            <span>Build bridges, not walls—Design for users across cultures</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T11:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Jonathan Reinink
+            <span>Building modern monoliths with Inertia.js</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T11:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Jeffrey Way
+            <span>Bad is Good.</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T12:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">Break</span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T12:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Taylor Otwell
+            <span>Exploring Laravel 8.x</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T13:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Prosper Otemuyiwa
+            <span>Supercharging Laravel apps with machine learning</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T13:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Colin DeCarlo
+            <span>The importance of practice</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T14:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">Break</span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T14:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Matt Stauffer
+            <span>Don't cry when your dev dependencies die</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T15:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Marcel Pociot
+            <span>Refactoring to simplicity</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T15:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Adam Wathan
+            <span>Building a Component Library with Tailwind CSS</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T16:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Jessica Archer
+            <span>The Laravel developer's guide to Vue SPAs - part 2</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T16:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">Break</span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T16:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            April Dunford
+            <span>Power Positioning - How to Harness a Marketing Superpower</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T17:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Caleb Porzio
+            <span>All The Cool New Things In Livewire & Alpine</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T17:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Tim MacDonald
+            <span>Follow the Eloquent road</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T18:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">
+            Jack Ellis
+            <span>How we scaled Fathom Analytics to handle billions of requests</span>
+          </span>
+            </li>
+            <li>
+                <span class="time" x-data="{ time: '2020-08-26T18:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+                <span class="event">Closing Remarks</span>
+            </li>
+
+        </ul>
+    </div>
+</section>
+<section class="footer">
+    <div class="footer-top">
+        <div class="angler">
+            <img class="element-1" src="/angler-fish.png">
+        </div>
+        <div class="footer-top-left">
+            <h4 class="green">Rapidly hacked together by <a href="https://twitter.com/claudiodekker">@ClaudioDekker</a></h4>
+            <p>
+                Design copied from <a href="https://laracon.net">Laracon.net</a>. Original design by <a href="https://few.io">Few.io</a>.<br />
+                Uses <a href="https://github.com/moment/moment">Moment.js</a> and <a href="https://github.com/alpinejs/alpine">Alpine.js</a>, and is hosted on <a href="https://www.netlify.com/">Netlify</a>.
+            </p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
