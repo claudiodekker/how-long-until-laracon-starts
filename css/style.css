@@ -261,6 +261,11 @@ h4 {
   display: inline-flex;
   letter-spacing: 2px;
 }
+
+.schedule-day ul li.passed {
+  opacity: 0.4;
+}
+
 .schedule-day ul li:nth-child(odd) {
   background: #0B253A;
 }

@@ -42,129 +42,129 @@
     </div>
     <div class="schedule-day" style="padding-top:24px;">
         <ul>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T09:50:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T09:50:00-04', label: null }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">Welcome</span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T10:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T10:00:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Freek Van der Herten
                     <span>A practical look at multitenancy in Laravel</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T10:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T10:30:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Jenny Shen
                     <span>Build bridges, not walls—Design for users across cultures</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T11:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T11:00:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Jonathan Reinink
                     <span>Building modern monoliths with Inertia.js</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T11:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T11:30:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Jeffrey Way
                     <span>Bad is Good.</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T12:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T12:00:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">Break</span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T12:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T12:15:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Taylor Otwell
                     <span>Exploring Laravel 8.x</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T13:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T13:15:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Prosper Otemuyiwa
                     <span>Supercharging Laravel apps with machine learning</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T13:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T13:45:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Colin DeCarlo
                     <span>The importance of practice</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T14:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T14:15:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">Break</span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T14:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T14:30:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Matt Stauffer
                     <span>Don't cry when your dev dependencies die</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T15:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T15:00:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Marcel Pociot
                     <span>Refactoring to simplicity</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T15:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T15:30:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Adam Wathan
                     <span>Building a Component Library with Tailwind CSS</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T16:00:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T16:00:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Jessica Archer
                     <span>The Laravel developer's guide to Vue SPAs - part 2</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T16:30:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T16:30:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">Break</span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T16:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T16:45:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     April Dunford
                     <span>Power Positioning - How to Harness a Marketing Superpower</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T17:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T17:15:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Caleb Porzio
                     <span>All The Cool New Things In Livewire & Alpine</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T17:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T17:45:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Tim MacDonald
                     <span>Follow the Eloquent road</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T18:15:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T18:15:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">
                     Jack Ellis
                     <span>How we scaled Fathom Analytics to handle billions of requests</span>
                 </span>
             </li>
-            <li>
-                <span class="time" x-data="{ time: '2020-08-26T18:45:00-04' }" x-html="moment().isBefore(time) ? moment().to(time) : '-'"></span>
+            <li x-data="{ time: '2020-08-26T18:45:00-04', 'label': '-' }" x-init="(label = getTimeUntil(time)) && setInterval(() => (label = getTimeUntil(time)), 1000)" :class="{ 'passed': label === '-' }">
+                <span class="time" x-text="label">-</span>
                 <span class="event">Closing Remarks</span>
             </li>
         </ul>
@@ -183,5 +183,8 @@
         </div>
     </div>
 </section>
+<script defer>
+    window.getTimeUntil = time => moment().isBefore(time) ? moment().to(time) : '-';
+</script>
 </body>
 </html>
